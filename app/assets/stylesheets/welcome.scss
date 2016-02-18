@@ -41,11 +41,11 @@ $difuminated-color-border: #fff;
 }
 
 .gradient {
-  background: $main-color; /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(circle, $main-color, $main-color, $difuminated-color-border); /* Safari */
-  background: -o-radial-gradient(circle, $main-color, $main-color, $difuminated-color-border); /* Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(circle, $main-color, $main-color, $difuminated-color-border); /* Firefox 3.6 to 15 */
-  background: radial-gradient(circle, $main-color, $main-color, $difuminated-color-border); /* Standard syntax */
+  background: $main-color;
+  background: -webkit-radial-gradient(circle, $main-color, $main-color, $difuminated-color-border);
+  background: -o-radial-gradient(circle, $main-color, $main-color, $difuminated-color-border);
+  background: -moz-radial-gradient(circle, $main-color, $main-color, $difuminated-color-border);
+  background: radial-gradient(circle, $main-color, $main-color, $difuminated-color-border);
 }
 
 .logo {

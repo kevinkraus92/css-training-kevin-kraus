@@ -1,6 +1,122 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-label {
-  color: red;
+$about-color: #F7F6EF;
+$line-color: #fff;
+
+@font-face {
+  font-family: 'futura-pt';
+  src: asset-url('futura.ttf');
+}
+.ss-facebook:before, .ss-facebook.right:after {
+  content: '';
+  font-family: "SSSocialRegular"
+}
+.first {
+  -webkit-transition-delay: 1s; /* Safari */
+  transition-delay: 1s;
+}
+
+.second {
+  -webkit-transition-delay: 3s; /* Safari */
+  transition-delay: 3s;
+}
+
+.third {
+  -webkit-transition-delay: 5s; /* Safari */
+  transition-delay: 5s;
+}
+
+.fourth {
+  -webkit-transition-delay: 7s; /* Safari */
+  transition-delay: 7s;
+}
+
+.overlap {
+  position: absolute;
+  top: 55px;
+  color: white;
+  z-index: 1;
+  padding: 15px;
+}
+
+.about-photo {
+  background-image: url('/assets/about.jpg');
+  height: 470px;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-title {
+  @extend .overlap;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: futura-pt, sans-serif;
+}
+
+.header-subtitle {
+  @extend .overlap;
+  font-size: 7px;
+  text-align: center;
+  letter-spacing: 6px;
+  margin-top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 75px;
+}
+
+.menu-1 {
+  @extend .overlap;
+}
+
+.menu-2 {
+  @extend .overlap;
+  padding-left: 200px;
+  top: 70px;
+
+}
+
+img {
+  position: relative;
+}
+
+.about {
+  background-color: $about-color;
+}
+
+.container.about {
+  padding: 0 500px;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 74px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  padding-top: 50px;
+}
+
+.about p {
+  color: #969696;
+  font-size: 25px;
+  line-height: 1.6em;
+  font-weight: 300;
+  font-family: futura-pt, sans-serif;
+
+}
+
+.line-about-me {
+  margin-top: 30px;
+  position: relative;
+  background-color: #000;
+  height: 4px;
+  margin-bottom: 40px;
+  width: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.copyright {
+  text-align: center;
+  padding: 30px;
 }

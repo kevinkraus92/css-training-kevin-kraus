@@ -2,27 +2,27 @@
 .main-container
   .main-section
     .phone-asset
-      img[src="/assets/phone.png"]
+      img src="/assets/phone.png"
     .vertical-line.gradient
     .logo
-      img[src="/assets/tcg_logo.png"]
+      img src="/assets/tcg_logo.png"
 
 .triangle-section
-.container.steps-section
+.container-steps.steps-section
   .step
-    img.asset[src="/assets/ic_list.png"]
+    img.asset src="/assets/ic_list.png"
     .title
       | Keep track of your money
     .subtitle
       | See all the debts and all your friends debts towards you.
   .step
-    img.asset[src="/assets/ic_safe.png"]
+    img.asset src="/assets/ic_safe.png"
     .title
       | Generate reminders
     .subtitle
       | Get reminder of who owes you money or who you owe money to.
   .step
-    img.asset[src="/assets/ic_reminder.png"]
+    img.asset src="/assets/ic_reminder.png"
     .title
       | No internet needed
     .subtitle
@@ -31,7 +31,9 @@
   .get-info
     | Get info on new updates
   .subcribe-input
-    input.input-box[type="text" name="SubscribeInput"]
+    form
+      input.input-box type="text" name="SubscribeInput"
   .subscribe
-    button.btn.btn-default.subscribe-button[type="button"]
-      | Subscribe
+    button.subscribe-button type="submit"
+      .subscribe-text
+        | Subscribe

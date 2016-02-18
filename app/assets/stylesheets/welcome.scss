@@ -1,16 +1,11 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
 @font-face {
   font-family: 'Myriad Pro';
   src: asset-url('mp.woff');
 }
 
-$main-color: #f5c85f;
-$difuminated-color-border: #fff;
+* {
+    font-family: 'Myriad Pro';
+}
 
 .line {
   background-color: $main-color;
@@ -60,7 +55,7 @@ $difuminated-color-border: #fff;
   height: 12px;
 }
 
-.container {
+.container-steps {
   width: 100%;
 }
 
@@ -68,7 +63,7 @@ $difuminated-color-border: #fff;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: #eee;
+  background: $step-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
   -webkit-box-shadow: inset 0px -15px 44px 0px rgba(201,195,201,1);
@@ -83,17 +78,15 @@ $difuminated-color-border: #fff;
 }
 
 .title {
-  font-family: 'Myriad Pro';
   font-size: 19px;
-  color: #999;
+  color: $title-color;
   line-height: 23px;
   margin-bottom: 10px;
 }
 
 .subtitle {
-  font-family: 'Myriad Pro';
   font-size: 14px;
-  color: #333;
+  color: $subtitle-color;
   line-height: 17px;
 }
 
@@ -107,8 +100,7 @@ $difuminated-color-border: #fff;
 }
 
 .get-info {
-  font-family: 'Myriad Pro';
-  color: #fff;
+  color: $white;
   text-align: center;
   padding-top: 30px;
   margin-bottom: 30px;
@@ -122,9 +114,10 @@ $difuminated-color-border: #fff;
 
 .input-box {
   border-radius: 10px;
-  border: 2px solid #ffffff;
+  border: 2px solid $white;
   line-height: 32px;
   width: 310px;
+  background-color: $white;
 }
 
 .subscribe {
@@ -134,13 +127,17 @@ $difuminated-color-border: #fff;
 .subscribe-button {
   background-color: $main-color;
   border-radius: 8px;
-  border-color: white;
-  color: white;
+  border-color: $white;
+}
+
+.subscribe-text {
+  color: $white;
 }
 
 .subscribe-button:hover {
   background-color: $main-color;
-  color: white;
+  color: $white;
+  border-color: $pressed-button-color;
 }
 
 
